@@ -8,7 +8,7 @@
 
 #if canImport(UIKit)
 
-@testable import PhoneNumberKit
+@testable import PersonaPhoneNumberKit
 import UIKit
 import XCTest
 

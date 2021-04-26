@@ -8,7 +8,7 @@
 
 import Foundation
 
-@testable import PhoneNumberKit
+@testable import PersonaPhoneNumberKit
 import XCTest
 
 class PhoneNumberKitParsingTests: XCTestCase {

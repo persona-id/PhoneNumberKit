@@ -2,17 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "PhoneNumberKit",
+    name: "PersonaPhoneNumberKit",
     platforms: [
         .iOS(.v9), .macOS(.v10_10), .tvOS(.v9), .watchOS(.v2)
     ],
     products: [
-        .library(name: "PhoneNumberKit", targets: ["PhoneNumberKit"]),
-        .library(name: "PhoneNumberKit-Static", type: .static, targets: ["PhoneNumberKit"]),
-        .library(name: "PhoneNumberKit-Dynamic", type: .dynamic, targets: ["PhoneNumberKit"])
+        .library(name: "PersonaPhoneNumberKit", targets: ["PersonaPhoneNumberKit"])
     ],
     targets: [
-        .target(name: "PhoneNumberKit",
+        .target(name: "PersonaPhoneNumberKit",
                 path: "PhoneNumberKit",
                 exclude: ["Resources/Original",
                           "Resources/README.md",
@@ -22,8 +20,8 @@ let package = Package(
                 resources: [
                     .process("Resources/PhoneNumberMetadata.json")
                 ]),
-        .testTarget(name: "PhoneNumberKitTests",
-                    dependencies: ["PhoneNumberKit"],
+        .testTarget(name: "PersonaPhoneNumberKitTests",
+                    dependencies: ["PersonaPhoneNumberKit"],
                     path: "PhoneNumberKitTests",
                     exclude: ["Info.plist"])
     ]
