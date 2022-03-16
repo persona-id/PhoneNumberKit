@@ -21,7 +21,7 @@ let package = Package(
                     .process("Resources/PhoneNumberMetadata.json")
                 ]),
         .testTarget(name: "PersonaPhoneNumberKitTests",
-                    dependencies: ["PersonaPhoneNumberKit"],
+                    dependencies: ["PersonaPhoneNumberKit2"],
                     path: "PhoneNumberKitTests",
                     exclude: ["Info.plist"])
     ]
